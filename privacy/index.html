@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Build Vault</title>
+    <meta name="description" content="Privacy Policy for Build Vault - the ultimate car modification tracking app.">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="apple-touch-icon" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #1c2228;
+            --bg-darker: #141a1f;
+            --bg-card: #252d35;
+            --vault-blue: #2da2e0;
+            --vault-blue-light: #55bff5;
+            --vault-cyan: #4ecdc4;
+            --text-primary: #ffffff;
+            --text-secondary: #a1aab3;
+            --border-color: #3a4550;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-darker);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(20, 26, 31, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .nav-logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav-logo span {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--vault-blue), var(--vault-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--vault-blue-light);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .page-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--vault-blue), var(--vault-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .intro {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+        }
+
+        .toc li {
+            counter-increment: toc-counter;
+            margin-bottom: 0.5rem;
+        }
+
+        .toc li::before {
+            content: counter(toc-counter) ". ";
+            color: var(--vault-blue);
+            font-weight: 600;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--vault-blue);
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--vault-blue);
+            display: inline-block;
+        }
+
+        .section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .section p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .section ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .section ul li {
+            color: var(--text-secondary);
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .section ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 6px;
+            height: 6px;
+            background: var(--vault-blue);
+            border-radius: 50%;
+        }
+
+        .highlight {
+            background: var(--bg-card);
+            border-left: 3px solid var(--vault-blue);
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight strong {
+            color: var(--text-primary);
+        }
+
+        .highlight em {
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--vault-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--vault-blue-light);
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 2rem;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-logo img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .footer-logo span {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--vault-blue-light);
+        }
+
+        .footer-copyright {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 6rem 1.5rem 3rem;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .footer-links {
+                margin-top: 1rem;
+            }
+
+            .footer-links a {
+                margin: 0 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="nav-logo">
+            <img src="../images/logo.png" alt="Build Vault Logo">
+            <span>Build Vault</span>
+        </a>
+        <div class="nav-links">
+            <a href="/#features">Features</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="/contact/">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated January 22, 2026</p>
+        </div>
+
+        <p class="intro">
+            This Privacy Notice for Build Vault ("we," "us," or "our") describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you download and use our mobile application (Build Vault) or engage with us in other related ways.
+        </p>
+
+        <div class="highlight">
+            <strong>Questions or concerns?</strong> <em>Reading this Privacy Notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have questions, please contact us at <a href="mailto:support@mybuildvault.com">support@mybuildvault.com</a>.</em>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc" id="toc">
+            <h2>Table of Contents</h2>
+            <ol>
+                <li><a href="#infocollect">What Information Do We Collect?</a></li>
+                <li><a href="#infouse">How Do We Process Your Information?</a></li>
+                <li><a href="#legalbases">What Legal Bases Do We Rely On?</a></li>
+                <li><a href="#whoshare">When and With Whom Do We Share Your Information?</a></li>
+                <li><a href="#ai">Do We Offer AI-Based Products?</a></li>
+                <li><a href="#inforetain">How Long Do We Keep Your Information?</a></li>
+                <li><a href="#infosafe">How Do We Keep Your Information Safe?</a></li>
+                <li><a href="#infominors">Do We Collect Information From Minors?</a></li>
+                <li><a href="#privacyrights">What Are Your Privacy Rights?</a></li>
+                <li><a href="#DNT">Controls for Do-Not-Track Features</a></li>
+                <li><a href="#uslaws">Do US Residents Have Specific Privacy Rights?</a></li>
+                <li><a href="#policyupdates">Do We Make Updates to This Notice?</a></li>
+                <li><a href="#contact">How Can You Contact Us?</a></li>
+                <li><a href="#request">How Can You Review, Update, or Delete Your Data?</a></li>
+            </ol>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="section" id="infocollect">
+            <h2>1. What Information Do We Collect?</h2>
+            <h3>Personal information you disclose to us</h3>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>We collect personal information that you provide to us.</em>
+            </div>
+            <p>We collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.</p>
+            <p><strong>Sensitive Information.</strong> We do not process sensitive information.</p>
+            <p>All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.</p>
+            <h3>Information automatically collected</h3>
+            <p>We automatically collect certain information when you use the Services, such as your device information and usage data. This information is primarily needed to maintain the security and operation of our Services.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section" id="infouse">
+            <h2>2. How Do We Process Your Information?</h2>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law.</em>
+            </div>
+            <p><strong>We process your personal information for a variety of reasons, depending on how you interact with our Services, including:</strong></p>
+            <ul>
+                <li><strong>To provide and maintain our Services.</strong> We may process your information to provide you with the requested service.</li>
+                <li><strong>To save or protect an individual's vital interest.</strong> We may process your information when necessary to save or protect an individual's vital interest, such as to prevent harm.</li>
+            </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" id="legalbases">
+            <h2>3. What Legal Bases Do We Rely On?</h2>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>We only process your personal information when we believe it is necessary and we have a valid legal reason to do so under applicable law.</em>
+            </div>
+            <p>The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. We may rely on the following legal bases:</p>
+            <ul>
+                <li><strong>Consent.</strong> We may process your information if you have given us permission to use your personal information for a specific purpose. You can withdraw your consent at any time.</li>
+                <li><strong>Legal Obligations.</strong> We may process your information where we believe it is necessary for compliance with our legal obligations.</li>
+                <li><strong>Vital Interests.</strong> We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party.</li>
+            </ul>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section" id="whoshare">
+            <h2>4. When and With Whom Do We Share Your Information?</h2>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>We may share information in specific situations described in this section and/or with specific third parties.</em>
+            </div>
+            <p>We may need to share your personal information in the following situations:</p>
+            <ul>
+                <li><strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+            </ul>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="section" id="ai">
+            <h2>5. Do We Offer AI-Based Products?</h2>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>We offer products, features, or tools powered by artificial intelligence, machine learning, or similar technologies.</em>
+            </div>
+            <p>As part of our Services, we offer products, features, or tools powered by artificial intelligence, machine learning, or similar technologies (collectively, "AI Products"). These tools are designed to enhance your experience and provide you with innovative solutions.</p>
+            <h3>Our AI Products</h3>
+            <p>Our AI Products are designed for the following functions:</p>
+            <ul>
+                <li>AI-powered invoice and receipt scanning</li>
+                <li>Automatic data extraction from documents</li>
+            </ul>
+            <h3>How We Process Your Data Using AI</h3>
+            <p>All personal information processed using our AI Products is handled in line with our Privacy Notice and our agreement with third parties. This ensures high security and safeguards your personal information throughout the process.</p>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="section" id="inforetain">
+            <h2>6. How Long Do We Keep Your Information?</h2>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.</em>
+            </div>
+            <p>We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law.</p>
+            <p>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible, then we will securely store your personal information and isolate it from any further processing until deletion is possible.</p>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="section" id="infosafe">
+            <h2>7. How Do We Keep Your Information Safe?</h2>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>We aim to protect your personal information through a system of organizational and technical security measures.</em>
+            </div>
+            <p>We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure.</p>
+        </div>
+
+        <!-- Section 8 -->
+        <div class="section" id="infominors">
+            <h2>8. Do We Collect Information From Minors?</h2>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>We do not knowingly collect data from or market to children under 18 years of age.</em>
+            </div>
+            <p>We do not knowingly collect, solicit data from, or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent's use of the Services.</p>
+            <p>If you become aware of any data we may have collected from children under age 18, please contact us at <a href="mailto:support@mybuildvault.com">support@mybuildvault.com</a>.</p>
+        </div>
+
+        <!-- Section 9 -->
+        <div class="section" id="privacyrights">
+            <h2>9. What Are Your Privacy Rights?</h2>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>Depending on your location, you may have rights that allow you greater access to and control over your personal information.</em>
+            </div>
+            <p>In some regions (like the EEA, UK, Switzerland, and Canada), you have certain rights under applicable data protection laws. These may include the right to request access and obtain a copy of your personal information, to request rectification or erasure, to restrict the processing of your personal information, and if applicable, to data portability.</p>
+            <h3>Withdrawing your consent</h3>
+            <p>If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time. You can withdraw your consent by contacting us using the contact details provided below.</p>
+            <p>If you have questions or comments about your privacy rights, you may email us at <a href="mailto:support@mybuildvault.com">support@mybuildvault.com</a>.</p>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="section" id="DNT">
+            <h2>10. Controls for Do-Not-Track Features</h2>
+            <p>Most web browsers and some mobile operating systems include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals.</p>
+        </div>
+
+        <!-- Section 11 -->
+        <div class="section" id="uslaws">
+            <h2>11. Do US Residents Have Specific Privacy Rights?</h2>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>If you are a resident of certain US states, you may have specific rights regarding your personal information.</em>
+            </div>
+            <p>We have not disclosed, sold, or shared any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. We will not sell or share personal information in the future belonging to website visitors, users, and other consumers.</p>
+        </div>
+
+        <!-- Section 12 -->
+        <div class="section" id="policyupdates">
+            <h2>12. Do We Make Updates to This Notice?</h2>
+            <div class="highlight">
+                <strong>In Short:</strong> <em>Yes, we will update this notice as necessary to stay compliant with relevant laws.</em>
+            </div>
+            <p>We may update this Privacy Notice from time to time. The updated version will be indicated by an updated "Revised" date at the top of this Privacy Notice. We encourage you to review this Privacy Notice frequently to be informed of how we are protecting your information.</p>
+        </div>
+
+        <!-- Section 13 -->
+        <div class="section" id="contact">
+            <h2>13. How Can You Contact Us?</h2>
+            <p>If you have questions or comments about this notice, you may email us at <a href="mailto:support@mybuildvault.com">support@mybuildvault.com</a> or contact us by post at:</p>
+            <p><strong>Build Vault</strong></p>
+        </div>
+
+        <!-- Section 14 -->
+        <div class="section" id="request">
+            <h2>14. How Can You Review, Update, or Delete Your Data?</h2>
+            <p>You have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. To request to review, update, or delete your personal information, please email us at <a href="mailto:support@mybuildvault.com">support@mybuildvault.com</a>.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Build Vault">
+                    <span>Build Vault</span>
+                </div>
+                <p class="footer-copyright">© 2026 Build Vault. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/contact/">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
