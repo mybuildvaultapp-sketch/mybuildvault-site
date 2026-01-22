@@ -1,0 +1,37 @@
+# Build Vault
+
+> Track every modification, receipt, and dollar spent on your project car.
+
+## Overview
+
+Build Vault is an iOS app built by car enthusiasts, for car enthusiasts. It helps you document your entire vehicle build journey—from bolt-ons to full engine swaps—keeping every modification, cost, and photo organized in one place. Never forget what you did, when you did it, or how much it actually cost.
+
+## Features
+
+- Track Every Mod: Log modifications with part numbers, vendors, install dates, costs, and before-and-after photos
+- Monitor Your Investment: See exactly how much you've invested, broken down by category
+- Generate Build Sheets: Create professional PDFs for car shows, insurance claims, or selling your vehicle
+- VIN Decode Your Specs: Enter your VIN to pull factory specs including stock horsepower, torque, weight, and drivetrain
+- Log Dyno Runs: Track dyno results, drag times, boost levels, and weight over time
+- Document Storage: Store registrations, titles, insurance cards, invoices, and service records with expiration alerts
+- AI Invoice Scanning: Automatically extract data from receipts and invoices
+- iCloud Sync: Keep your data synced across all your devices
+
+## Pricing
+
+- Free Tier: 1 vehicle, 15 mods per vehicle, 1 photo per mod, 2 build sheet exports/month, 20 documents total
+- Pro Tier: Unlimited vehicles, unlimited mods, 10 photos per mod, unlimited exports, unlimited documents, AI invoice scanning, iCloud sync
+
+## Links
+
+- [Website](https://mybuildvault.com)
+- [App Store](https://apps.apple.com/app/build-vault)
+- [Privacy Policy](https://mybuildvault.com/privacy/)
+- [Contact/Support](https://mybuildvault.com/contact/)
+- [Email](mailto:mybuildvaultapp@gmail.com)
+
+## Technical
+
+- Platform: iOS (iPhone and iPad)
+- Category: Automotive, Utilities, Lifestyle
+- Developer: Build Vault
