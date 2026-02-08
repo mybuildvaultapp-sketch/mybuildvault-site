@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - Build Vault | Car Modification Tracking App</title>
+    <meta name="description" content="Terms of Use for Build Vault - Review the terms and conditions for using our car modification tracking app.">
+    <meta name="author" content="Build Vault">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mybuildvault.com/terms/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mybuildvault.com/terms/">
+    <meta property="og:title" content="Terms of Use - Build Vault">
+    <meta property="og:description" content="Terms of Use for Build Vault - Review the terms and conditions for using our app.">
+    <meta property="og:image" content="https://mybuildvault.com/images/og-image.png">
+    <meta property="og:site_name" content="Build Vault">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://mybuildvault.com/terms/">
+    <meta name="twitter:title" content="Terms of Use - Build Vault">
+    <meta name="twitter:description" content="Terms of Use for Build Vault - Review the terms and conditions for using our app.">
+
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="apple-touch-icon" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #1c2228;
+            --bg-darker: #141a1f;
+            --bg-card: #252d35;
+            --vault-blue: #2da2e0;
+            --vault-blue-light: #55bff5;
+            --vault-cyan: #4ecdc4;
+            --text-primary: #ffffff;
+            --text-secondary: #a1aab3;
+            --border-color: #3a4550;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-darker);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(20, 26, 31, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .nav-logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav-logo span {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--vault-blue), var(--vault-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--vault-blue-light);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .page-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--vault-blue), var(--vault-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .intro {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc-counter;
+        }
+
+        .toc li {
+            counter-increment: toc-counter;
+            margin-bottom: 0.5rem;
+        }
+
+        .toc li::before {
+            content: counter(toc-counter) ". ";
+            color: var(--vault-blue);
+            font-weight: 600;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--vault-blue);
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--vault-blue);
+            display: inline-block;
+        }
+
+        .section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .section p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .section ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .section ul li {
+            color: var(--text-secondary);
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .section ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 6px;
+            height: 6px;
+            background: var(--vault-blue);
+            border-radius: 50%;
+        }
+
+        .highlight {
+            background: var(--bg-card);
+            border-left: 3px solid var(--vault-blue);
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight strong {
+            color: var(--text-primary);
+        }
+
+        .highlight em {
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--vault-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--vault-blue-light);
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 2rem;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-logo img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .footer-logo span {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--vault-blue-light);
+        }
+
+        .footer-copyright {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 6rem 1.5rem 3rem;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .footer-links {
+                margin-top: 1rem;
+            }
+
+            .footer-links a {
+                margin: 0 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="nav-logo">
+            <img src="../images/logo.png" alt="Build Vault Logo">
+            <span>Build Vault</span>
+        </a>
+        <div class="nav-links">
+            <a href="/#features">Features</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="/terms/">Terms</a>
+            <a href="/contact/">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Terms of Use</h1>
+            <p class="last-updated">Last updated February 8, 2026</p>
+        </div>
+
+        <p class="intro">
+            These Terms of Use ("Terms") govern your access to and use of the Build Vault mobile application ("App") and related services ("Services") provided by Build Vault ("we," "us," or "our"). By downloading, installing, or using the App, you agree to be bound by these Terms.
+        </p>
+
+        <div class="highlight">
+            <strong>Please read these Terms carefully.</strong> <em>If you do not agree with these Terms, you must not use the App or Services. For questions, contact us at <a href="mailto:support@mybuildvault.com">support@mybuildvault.com</a>.</em>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc" id="toc">
+            <h2>Table of Contents</h2>
+            <ol>
+                <li><a href="#acceptance">Acceptance of Terms</a></li>
+                <li><a href="#services">Description of Services</a></li>
+                <li><a href="#accounts">User Accounts</a></li>
+                <li><a href="#subscriptions">Subscriptions and Payments</a></li>
+                <li><a href="#content">User Content and Data</a></li>
+                <li><a href="#acceptable">Acceptable Use</a></li>
+                <li><a href="#ip">Intellectual Property</a></li>
+                <li><a href="#ai">AI-Powered Features</a></li>
+                <li><a href="#thirdparty">Third-Party Services</a></li>
+                <li><a href="#disclaimer">Disclaimers</a></li>
+                <li><a href="#liability">Limitation of Liability</a></li>
+                <li><a href="#termination">Termination</a></li>
+                <li><a href="#changes">Changes to These Terms</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ol>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="section" id="acceptance">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using Build Vault, you confirm that you are at least 18 years of age and have the legal capacity to enter into these Terms. If you are using the App on behalf of an organization, you represent that you have the authority to bind that organization to these Terms.</p>
+            <p>Your continued use of the App after any changes to these Terms constitutes your acceptance of the revised Terms.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section" id="services">
+            <h2>2. Description of Services</h2>
+            <p>Build Vault is a vehicle modification tracking application that allows users to:</p>
+            <ul>
+                <li>Log and track vehicle modifications with photos, pricing, and vendor details</li>
+                <li>Store vehicle documents such as registration, insurance, and receipts</li>
+                <li>Record performance data including dyno results and drag times</li>
+                <li>Track mileage history over time</li>
+                <li>Generate build sheet exports</li>
+                <li>Scan invoices and receipts using AI-powered tools</li>
+                <li>Sync data across devices via iCloud (Pro subscribers)</li>
+            </ul>
+            <p>We reserve the right to modify, suspend, or discontinue any part of the Services at any time, with or without notice.</p>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" id="accounts">
+            <h2>3. User Accounts</h2>
+            <p>Certain features of the App may require you to sign in with your Apple ID via Sign in with Apple. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+            <p>You agree to notify us immediately of any unauthorized use of your account. We are not liable for any loss or damage arising from your failure to protect your account information.</p>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section" id="subscriptions">
+            <h2>4. Subscriptions and Payments</h2>
+            <h3>Build Vault Pro</h3>
+            <p>Build Vault offers a premium subscription ("Build Vault Pro") at <strong>$29.99 per year</strong> that unlocks additional features including unlimited vehicles, modifications, photos, documents, iCloud sync, AI invoice scanning, full VIN decoding, and unlimited build sheet exports.</p>
+
+            <h3>Billing and Renewal</h3>
+            <ul>
+                <li>Payment is charged to your Apple ID account at confirmation of purchase</li>
+                <li>Your subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current billing period</li>
+                <li>Your account will be charged for renewal within 24 hours prior to the end of the current period at the same price</li>
+                <li>You can manage your subscription and turn off auto-renewal in your device's Account Settings after purchase</li>
+            </ul>
+
+            <h3>Free Trial</h3>
+            <p>If a free trial is offered, any unused portion of the free trial period will be forfeited when you purchase a subscription.</p>
+
+            <h3>Price Changes</h3>
+            <p>We may change subscription prices from time to time. Any price changes will take effect at the start of the next subscription period following the date of the price change. Your continued use of the Services after a price change constitutes your agreement to pay the updated amount.</p>
+
+            <h3>Refunds</h3>
+            <p>All purchases are processed by Apple and are subject to Apple's refund policies. To request a refund, please contact Apple Support or visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="section" id="content">
+            <h2>5. User Content and Data</h2>
+            <h3>Ownership</h3>
+            <p>You retain full ownership of all data, photos, documents, and other content ("User Content") that you create, upload, or store within Build Vault. We do not claim any ownership rights over your User Content.</p>
+
+            <h3>Data Storage</h3>
+            <p>Your data is stored locally on your device. If you are a Pro subscriber using iCloud sync, your data is also stored in your personal iCloud account via Apple's CloudKit service. We do not have access to your iCloud data.</p>
+
+            <h3>Data Deletion</h3>
+            <p>You can delete your data at any time within the App. You may also request complete deletion of your data by contacting us at <a href="mailto:support@mybuildvault.com">support@mybuildvault.com</a>.</p>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="section" id="acceptable">
+            <h2>6. Acceptable Use</h2>
+            <p>You agree not to use the App to:</p>
+            <ul>
+                <li>Violate any applicable laws or regulations</li>
+                <li>Upload content that infringes on the intellectual property rights of others</li>
+                <li>Attempt to gain unauthorized access to the App, its servers, or any connected systems</li>
+                <li>Reverse engineer, decompile, or disassemble any part of the App</li>
+                <li>Use the App in any manner that could damage, disable, or impair the Services</li>
+                <li>Upload malicious code, viruses, or any harmful content</li>
+            </ul>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="section" id="ip">
+            <h2>7. Intellectual Property</h2>
+            <p>The App, including its design, features, code, graphics, and branding, is owned by Build Vault and is protected by intellectual property laws. You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms.</p>
+            <p>The Build Vault name, logo, and all related marks are trademarks of Build Vault. You may not use these marks without our prior written permission.</p>
+        </div>
+
+        <!-- Section 8 -->
+        <div class="section" id="ai">
+            <h2>8. AI-Powered Features</h2>
+            <p>Build Vault includes AI-powered features such as invoice and receipt scanning. These features use third-party AI services to process images you provide.</p>
+            <ul>
+                <li>AI features are provided "as is" and may not always produce accurate results</li>
+                <li>You should review and verify all AI-extracted data before relying on it</li>
+                <li>Images processed by AI features may be sent to third-party servers for processing</li>
+                <li>We do not store your images on third-party servers after processing is complete</li>
+            </ul>
+            <p>For more details on how your data is handled, please refer to our <a href="/privacy/">Privacy Policy</a>.</p>
+        </div>
+
+        <!-- Section 9 -->
+        <div class="section" id="thirdparty">
+            <h2>9. Third-Party Services</h2>
+            <p>The App integrates with the following third-party services:</p>
+            <ul>
+                <li><strong>Apple iCloud (CloudKit)</strong> for data synchronization across devices</li>
+                <li><strong>RevenueCat</strong> for subscription management and payment processing</li>
+                <li><strong>Google Gemini API</strong> for AI-powered invoice scanning</li>
+                <li><strong>NHTSA VIN Decoder API</strong> for vehicle identification number decoding</li>
+            </ul>
+            <p>Your use of these third-party services is subject to their respective terms of service and privacy policies. We are not responsible for the practices or content of third-party services.</p>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="section" id="disclaimer">
+            <h2>10. Disclaimers</h2>
+            <div class="highlight">
+                <strong>Important:</strong> <em>The App and Services are provided on an "as is" and "as available" basis without warranties of any kind, either express or implied.</em>
+            </div>
+            <p>We do not warrant that the App will be uninterrupted, error-free, or free of harmful components. We make no guarantees regarding the accuracy, reliability, or completeness of any content or data within the App, including AI-generated results.</p>
+            <p>Build Vault is a tracking and organizational tool. We do not provide automotive, mechanical, legal, or financial advice. You are solely responsible for decisions made based on information stored in the App.</p>
+        </div>
+
+        <!-- Section 11 -->
+        <div class="section" id="liability">
+            <h2>11. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by applicable law, Build Vault and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data, profits, or goodwill, arising out of or in connection with your use of the App or Services.</p>
+            <p>Our total liability for any claims arising under these Terms shall not exceed the amount you have paid us in the twelve (12) months preceding the claim.</p>
+        </div>
+
+        <!-- Section 12 -->
+        <div class="section" id="termination">
+            <h2>12. Termination</h2>
+            <p>You may stop using the App at any time by deleting it from your device. To cancel your subscription, manage it through your device's Account Settings.</p>
+            <p>We reserve the right to suspend or terminate your access to the App at any time, without notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties.</p>
+            <p>Upon termination, your right to use the App will cease immediately. Provisions of these Terms that by their nature should survive termination shall remain in effect.</p>
+        </div>
+
+        <!-- Section 13 -->
+        <div class="section" id="changes">
+            <h2>13. Changes to These Terms</h2>
+            <p>We may update these Terms from time to time. The updated version will be indicated by an updated date at the top of this page. We encourage you to review these Terms periodically. Your continued use of the App after any changes constitutes your acceptance of the revised Terms.</p>
+        </div>
+
+        <!-- Section 14 -->
+        <div class="section" id="contact">
+            <h2>14. Contact Us</h2>
+            <p>If you have questions or concerns about these Terms of Use, please contact us at:</p>
+            <p><strong>Build Vault</strong><br>
+            Email: <a href="mailto:support@mybuildvault.com">support@mybuildvault.com</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="Build Vault">
+                    <span>Build Vault</span>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Build Vault. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Use</a>
+                <a href="/contact/">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
